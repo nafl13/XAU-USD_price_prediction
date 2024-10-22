@@ -123,11 +123,9 @@ def predict():
 
     # Determine if the market is Bullish or Bearish
     if prediction > close6:
-        prediction_text = f"The predicted value is  ${
-            prediction:.2f}  - Bullish"
+        prediction_text = f"The predicted value is  ${prediction:.2f}  - Bullish"
     else:
-        prediction_text = f"The predicted value is  ${
-            prediction:.2f}  - Bearish"
+        prediction_text = f"The predicted value is  ${prediction:.2f}  - Bearish"
 
     # Store the prediction in the session
     session['prediction_text'] = prediction_text
